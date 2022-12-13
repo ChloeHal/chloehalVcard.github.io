@@ -7,13 +7,15 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>        
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel="icon" type="image/x-icon" href="Fichier 1.svg">        
-        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-        <title>CV</title>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>        <title>CV</title>
     </head>
 
     <body>
         <div class="container">
-            <div class="Contact"><img src="contact@4x.png" alt="" /> </div>
+            <div class="Contact"><img src="contact@4x.png" alt="" /> <div class="overlay">
+                <div class="text">Hello World</div>
+              </div></div>
+            
             <div class="Photo"><img src="photo@4x.png" alt="" /></div>
             <div class="Skills"><img src="skills@4x.png" alt="" /></div>
             <div class="Fonction"><img src="fonction@4x.png" alt="" /></div>
@@ -21,16 +23,14 @@
             
             
             <div class="form">
-                <h1>Don't hesitate to contact me</h1>
+                <h1>DON'T HESITATE TO CONTACT ME</h1>
                 <h2>I receive with pleasure job offers, questions, proposals for new challenges or just words of love</h2>
-                <form id="form" class="topBefore">
-		
-                    <input id="name" type="text" placeholder="NAME">
-                    <input id="email" type="text" placeholder="E-MAIL">
-                    <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
-            <input id="submit" type="submit" value="SEND!">
-            
-          </form>
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                  </form>
 
 
             </div>
