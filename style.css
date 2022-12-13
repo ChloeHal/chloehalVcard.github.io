@@ -1,6 +1,6 @@
 
 html {
-    font-family: 'Montserrat', Arial, sans-serif;
+    font-family: 'Montserrat';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;}
 
@@ -8,6 +8,8 @@ html {
         background: #e6311c;
         margin: 0px;
         padding: 0;
+        font-family: 'montserrat';
+
       }
 
 h1{
@@ -52,69 +54,81 @@ img{
 }
 
 /*--------------------form--------------------*/
-
-#form {
-  position: relative;
-  width: 500px;
-  margin: 50px auto 100px auto;
+form { max-width:420px; margin:50px auto; }
+::placeholder{
+    color: #fcd5b5;
+    font-family:'montserrat';
 }
 
-input {
-  font-family: 'montserrat';
-  font-size: 0.875em;
-  width: 470px;
-  height: 50px;
-  padding: 0px 15px 0px 15px;
-  
-  background: transparent;
-  outline: none;
-  color: #fcd5b5;
-  
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+.feedback-input {
+  color:#fcd5b5;
+  font-family: 'Helvetica';
+  font-weight:0;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 1.5px solid #3c7ec1;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
 }
 
-input:hover {
-  background: #f6ab8b;
-  color: #3c7ec1;
-}
+.feedback-input:focus { 
+    border:2px solid #f6ab8b;
+background-color: #3c7ec1; }
 
 textarea {
-  width: 470px;
-  max-width: 470px;
-  height: 110px;
-  max-height: 110px;
-  padding: 15px;
-  background: transparent;
-  outline: none;
-  color: #fcd5b5;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+
 }
 
-textarea:hover {
-  background: #f6ab8b;
-  color: #3c7ec1;
+[type="submit"] {
+  font-family: 'Montserrat';
+  width: 100%;
+  background:#3c7ec1;
+  border:0;
+  cursor:pointer;
+  color:#fcd5b5;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
 }
+[type="submit"]:hover { 
+    background:#f6ab8b;
+color:#3c7ec1 ; }
 
-#submit {
-  width: 502px;
-  padding: 0;
-  margin: -5px 0px 0px 0px;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.875em;
-  color: #fcd5b5;
-  outline:none;
-  cursor: pointer;
-  border-top: none;
-}
-
-#submit:hover {
-  color: #3c7ec1;
-}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .Contact:hover .overlay {
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
