@@ -25,7 +25,37 @@ h2{
     font-size: large;
 }
 /*--------------------GRID--------------------*/
-.container {  display: grid;
+.container{
+  display: flex; 
+  flex-wrap: wrap; 
+  flex-direction: row;
+}
+.Contact { 
+    flex-basis: 50%;
+}
+  
+  .Photo {
+    flex-basis: 25%;
+  }
+  
+  .Skills {
+    flex-basis: 25%;
+
+  }
+  
+  .Fonction {
+    flex-basis: 25%;
+    
+  }
+  
+  .CV {
+    flex-basis: 25%;
+    
+  }
+img{
+    max-width: 100%;
+}
+/*.container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr S;
     gap: 0px 0px;
@@ -47,11 +77,9 @@ h2{
   .CV { grid-area: CV; }
   
   .form { grid-area: form; }
-  
+  --*/
  
-img{
-    width: 100%;
-}
+
 
 /*--------------------form--------------------*/
 form { max-width:420px; margin:50px auto; }
@@ -67,7 +95,7 @@ form { max-width:420px; margin:50px auto; }
   font-size: 18px;
   line-height: 22px;
   background-color: transparent;
-  border: 1.5px solid #3c7ec1;
+  border: 1.5px solid #fcd5b5;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -105,30 +133,4 @@ textarea {
     background:#f6ab8b;
 color:#3c7ec1 ; }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
-  }
-  
-  .Contact:hover .overlay {
-    opacity: 1;
-  }
-  .text {
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+/*------------hover*/
