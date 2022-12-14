@@ -78,7 +78,221 @@ img{
   
   .form { grid-area: form; }
   --*/
- 
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Contact Contact photo skills"
+    "Contact Contact fonction cv";
+}
+
+a {
+  text-decoration:none;
+}
+
+.contact { grid-area: Contact; 
+
+background-image: url("contact@4x.png") ;
+background-size: cover;
+display:flex;
+  justify-content:center;
+  align-items:center;
+
+}
+
+
+.photo { grid-area: photo;
+max-width: 100%;
+background-image: url("photo@4x.png") ;
+background-size: cover;
+ }
+
+.skills { grid-area: skills; 
+max-width: 100%;
+background-image: url("skills@4x.png") ;
+background-size: cover;
+}
+
+.fonction { grid-area: fonction; 
+max-width: 100%;
+background-image: url("fonction@4x.png") ;
+background-size: cover;
+}
+
+.cv { grid-area: cv; 
+max-width: 100%;
+background-image: url("cv@4x.png") ;
+background-size: cover;
+}
+#bigone{
+width: 100%;
+}
+#smallone{
+    width: 100%;
+}
+
+/*hover contact*/
+.contact {
+    position: relative;
+    display: inline-block;
+}
+
+.contacttext {
+    color: #e6311c;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'montserrat';
+}
+.coverlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #f49c8b;
+}
+.coverlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #f49c8b;
+}
+.contact:hover .coverlay,.contact:hover .coverlayFade {
+    opacity: 1;
+}
+
+/*hover cv*/
+.cv {
+    position: relative;
+    display: inline-block;
+}
+
+.cvtext {
+    color: #e6311c;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'montserrat';
+}
+.cvoverlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #f49c8b;
+}
+.cvoverlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #f49c8b;
+}
+.cv:hover .cvoverlay,.cv:hover .cvoverlayFade {
+    opacity: 1;
+}
+
+
+/*hover fonction*/
+.fonction {
+    position: relative;
+    display: inline-block;
+}
+
+.fonctiontext {
+    color: #fcd5b5;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'montserrat';
+}
+.foverlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #e6311c;
+}
+.foverlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #e6311c;
+}
+.fonction:hover .foverlay,.fonction:hover .foverlayFade {
+    opacity: 1;
+}
+
+/*hover skills*/
+.skills {
+    position: relative;
+    display: inline-block;
+}
+
+.skillstext {
+    color: #fcd5b5;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'montserrat';
+}
+.skillsoverlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #3c7ec1;
+}
+.skillsoverlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-color: #3c7ec1;
+}
+.skills:hover .skillsoverlay,.skills:hover .skillsoverlayFade {
+    opacity: 1;
+}
+/*hover photo*/
+.photo {
+    position: relative;
+    display: inline-block;
+}
+
+.photok{
+    width: 100%;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.photooverlayFade{
+    height: 100%;
+    width:100%;
+    top:0;
+    left:0;
+    background-color: #3c7ec1;
+}
+.photooverlay {
+    position: absolute;
+    opacity: 0;
+    transition:all .3s ease;
+    background-image: url("photok@4x.png") ;
+    background-size: cover;
+}
+.photo:hover .photooverlay,.photo:hover .photooverlayFade {
+    opacity: 1;
+}
+
 
 
 /*--------------------form--------------------*/
