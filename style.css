@@ -16,7 +16,7 @@ h1{
     text-align: center;
     color: #fcd5b5;
     font-family: 'abril fatface';
-    font-size: 60px;
+    font-size: 50px;
 }
 h2{
     text-align: center;
@@ -25,36 +25,8 @@ h2{
     font-size: large;
 }
 /*--------------------GRID--------------------*/
-.container{
-  display: flex; 
-  flex-wrap: wrap; 
-  flex-direction: row;
-}
-.Contact { 
-    flex-basis: 50%;
-}
-  
-  .Photo {
-    flex-basis: 25%;
-  }
-  
-  .Skills {
-    flex-basis: 25%;
 
-  }
-  
-  .Fonction {
-    flex-basis: 25%;
-    
-  }
-  
-  .CV {
-    flex-basis: 25%;
-    
-  }
-img{
-    max-width: 100%;
-}
+
 /*.container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr S;
@@ -347,4 +319,107 @@ textarea {
     background:#f6ab8b;
 color:#3c7ec1 ; }
 
-/*------------hover*/
+/*------------*/
+@media (max-width: 1700px) {
+  .container {
+    flex-direction: column;
+    
+}
+.photo {
+
+    width: 100%;
+    height: 50%;
+}
+.cv{
+  width: 100%;
+    height: 50%;
+}
+.contact{
+  width: 100%;
+    height: 50%;
+}
+.fonction{
+  width: 100%;
+    height: 50%;
+}
+.skills{
+  width: 100%;
+    height: 50%;
+}
+#zonetext {
+    width: 100%;
+    height: 50%;
+}
+img {
+    width: 50%;
+}
+}
+@media (max-width: 992px) {
+        .container {
+            flex-direction: column;
+            
+        }
+        .photo {
+      
+            width: 100%;
+            height: 50%;
+        }
+        .cv{
+          width: 100%;
+            height: 50%;
+        }
+        .contact{
+          width: 100%;
+            height: 50%;
+        }
+        .fonction{
+          width: 100%;
+            height: 50%;
+        }
+        .skills{
+          width: 100%;
+            height: 50%;
+        }
+        #zonetext {
+            width: 100%;
+            height: 50%;
+        }
+        img {
+            width: 50%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+      .container {
+        flex-direction: column;
+        
+    }
+    .photo {
+  
+        width: 100%;
+        height: 50%;
+    }
+    .cv{
+      width: 100%;
+        height: 50%;
+    }
+    .contact{
+      width: 100%;
+        height: 50%;
+    }
+    .fonction{
+      width: 100%;
+        height: 50%;
+    }
+    .skills{
+      width: 100%;
+        height: 50%;
+    }
+    #zonetext {
+        width: 100%;
+        height: 50%;
+    }
+    img {
+        width: 50%;
+    }
+}
