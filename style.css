@@ -23,6 +23,16 @@ h2{
     color: #f6ab8b;
     font-family: 'montserrat';
     font-size: large;
+  
+}
+
+{
+  color: white;
+  background-color: $dark-teal;
+  width: 100vw;
+  text-align: center;
+  padding: .5em;
+  position: relative;
 }
 /*--------------------GRID--------------------*/
 
