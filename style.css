@@ -5,7 +5,7 @@ html {
     -webkit-text-size-adjust: 100%;}
 
     body {
-        background: #e6311c;
+        background: #3c7ec1;
         margin: 0px;
         padding: 0;
         font-family: 'montserrat';
@@ -15,8 +15,8 @@ html {
 h1{
     text-align: center;
     color: #fcd5b5;
-    font-family: 'montserrat';
-    font-size: xx-large;
+    font-family: 'abril fatface';
+    font-size: 60px;
 }
 h2{
     text-align: center;
