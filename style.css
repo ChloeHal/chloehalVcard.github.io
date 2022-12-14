@@ -268,6 +268,7 @@ width: 100%;
     transition:all .3s ease;
     background-image: url("photok@4x.png") ;
     background-size: cover;
+    background-position: center;
 }
 .photo:hover .photooverlay,.photo:hover .photooverlayFade {
     opacity: 1;
