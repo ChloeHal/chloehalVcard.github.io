@@ -26,14 +26,6 @@ h2{
   
 }
 
-{
-  color: white;
-  background-color: $dark-teal;
-  width: 100vw;
-  text-align: center;
-  padding: .5em;
-  position: relative;
-}
 /*--------------------GRID--------------------*/
 
 
@@ -398,5 +390,8 @@ grid-auto-flow: row;
           }
           .skillstext{
             font-size: 30px;
+          }
+          h2{
+            font-size: 25px;
           }
       }
