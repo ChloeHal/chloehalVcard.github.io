@@ -1,27 +1,27 @@
 
 html {
-    font-family: 'Montserrat';
+    font-family: 'poppins';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;}
 
     body {
-        background: #3c7ec1;
+        background: #fcd5b5;
         margin: 0px;
         padding: 0;
-        font-family: 'montserrat';
+        font-family: 'poppins';
 
       }
 
 h1{
     text-align: center;
-    color: #fcd5b5;
-    font-family: 'abril fatface';
+    color: #e6311c;
+    font-family: 'poppins';
     font-size: 50px;
 }
 h2{
     text-align: center;
-    color: #f6ab8b;
-    font-family: 'montserrat';
+    color: #e6311c;
+    font-family: 'poppins';
     font-size: large;
   
 }
@@ -120,12 +120,12 @@ width: 100%;
 
 .contacttext {
     color: #e6311c;
-    font-size: 30px;
+    font-size: 25px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'montserrat';
+    font-family: 'poppins';
 }
 .coverlayFade{
     height: 100%;
@@ -157,7 +157,7 @@ width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'montserrat';
+    font-family: 'poppins';
 }
 .cvoverlayFade{
     height: 100%;
@@ -190,7 +190,7 @@ width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'montserrat';
+    font-family: 'poppins';
 }
 .foverlayFade{
     height: 100%;
@@ -217,12 +217,12 @@ width: 100%;
 
 .skillstext {
     color: #fcd5b5;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'montserrat';
+    font-family: 'poppins';
 }
 .skillsoverlayFade{
     height: 100%;
@@ -279,18 +279,18 @@ width: 100%;
 /*--------------------form--------------------*/
 form { max-width:420px; margin:50px auto; }
 ::placeholder{
-    color: #fcd5b5;
-    font-family:'montserrat';
+    color: #3c7ec1;
+    font-family:'poppins';
 }
 
 .feedback-input {
-  color:#fcd5b5;
-  font-family: 'Helvetica';
+  color:#e6311c;
+  font-family: 'poppins';
   font-weight:0;
   font-size: 18px;
   line-height: 22px;
   background-color: transparent;
-  border: 1.5px solid #fcd5b5;
+  border: 1.5px solid #e6311c;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -300,8 +300,8 @@ form { max-width:420px; margin:50px auto; }
 }
 
 .feedback-input:focus { 
-    border:2px solid #f6ab8b;
-background-color: #3c7ec1; }
+    border:2px solid #3c7ec1;
+background-color: #fcd5b5; }
 
 textarea {
   height: 150px;
@@ -311,7 +311,7 @@ textarea {
 }
 
 [type="submit"] {
-  font-family: 'Montserrat';
+  font-family: 'poppins';
   width: 100%;
   background:#3c7ec1;
   border:0;
@@ -328,6 +328,64 @@ textarea {
     background:#f6ab8b;
 color:#3c7ec1 ; }
 
+/* Add a black background color to the top navigation */
+.topnav {
+  position: relative;
+  background-color: #f6ab8b;
+  overflow: hidden;
+}
+.topnav a.active {
+  background-color: #f6ab8b;
+  color: #fcd5b5;
+}
+.topnav a.active:hover{
+  background-color: #f6ab8b;
+  color: #f6ab8b;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #3c7ec1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #e6311c;
+  color: #f6ab8b;
+}
+
+
+/* Centered section inside the top navigation */
+.topnav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right {
+    float: none;
+    display: block;
+  }
+
+  .topnav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+}
 /*------------*/
 @media (max-width: 1700px) {
   .container {
@@ -359,7 +417,7 @@ color:#3c7ec1 ; }
         font-size: 35px;
       }
       .skillstext{
-        font-size: 25px;
+        font-size: 20px;
       }
       }
       
@@ -380,7 +438,7 @@ grid-auto-flow: row;
           }
 
           .contacttext{
-            font-size: 35px;
+            font-size: 25px;
            }   
           .cvtext{
             font-size: 70px;
@@ -389,9 +447,10 @@ grid-auto-flow: row;
             font-size: 45px;
           }
           .skillstext{
-            font-size: 30px;
+            font-size: 25px;
           }
           h2{
             font-size: 25px;
           }
       }
+    
